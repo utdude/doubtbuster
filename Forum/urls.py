@@ -4,6 +4,6 @@ from Forum import views
 
 urlpatterns = [
     path('', views.index),
-    path('Sign-up', views.signup),
-    path('login',views.login)
+    path('Register', views.signup),
+    path('Login',views.login)
 ]

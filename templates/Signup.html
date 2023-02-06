@@ -1,53 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
-  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/Login.css' %}">
 </head>
-<body id="signupbody">
-  <div class="container">
-
-        <div class="row">
-          <div class="col-lg-8 video-box">
-              <img src="{% static 'assets/img/1.jpg' %}" alt="">
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-            
-
-          </div>
-        </div>
-
-      </div>
-
-</body>
-<style>
-    #signupbody{
-        background: #ffc107;
-    }
-    .container{
-        background: #fff;
-    }
-</style>
+<body style="background: url({% static 'assets/img/bg.jpg' %}); background-size:cover;">
+    <div class="form">
+        <form action="">
+            <input type="text" placeholder="Your Name..">
+            <input type="email" placeholder="Your Email..">
+            <input type="text" placeholder="Username..">
+            <input type="password" placeholder="password..">
+             <input type="password" placeholder="Please Confirm Your password..">
+            <button>Register</button>
+        </form>
+    </div>
+   </body>
 </html>
